@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela principal</title>
+</head>
+<body>
+    <h1> Olá mundo </h1>
+    <table>
+            <tr>
+                <td>ID</td>
+                <td>TITULO</td>
+                <td>DESCRIÇÃO</td>
+            </tr>
+        <% for(var i = 0; i < dados.length; i++){ %>
+            <tr>
+                <td><%= dados[i].id_dados %></td>
+                <td><%= dados[i].titulo %></td>
+                <td><%= dados[i].descricao %></td>
+            </tr>
+           <% } %>
+    </table>
+
+</body>
+</html>
